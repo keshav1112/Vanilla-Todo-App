@@ -138,12 +138,17 @@ p {
   padding: 1rem;
 }
 
-.wrapper .todo-fields form .add, .wrapper .data-section form .add {
+.wrapper .todo-fields form .add, .wrapper .todo-fields form .update, .wrapper .data-section form .add, .wrapper .data-section form .update {
   padding: 1rem;
   background-color: var(--dark-blue);
+  border: 1px solid var(--white);
   color: var(--white);
   font-size: 1rem;
   cursor: pointer;
+}
+
+.wrapper .todo-fields form .update, .wrapper .data-section form .update {
+  display: none;
 }
 
 .wrapper .data-section .addTodoList li {
