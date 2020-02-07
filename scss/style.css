@@ -1,0 +1,178 @@
+:root {
+  --light-gray:#f2f2f2;
+  --black:#000000;
+  --white:#ffffff;
+  --dark-blue:#303F9F;
+  --dark-blue-hover:#243289;
+  --light-blue:#C5CAE9;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 5rem 15rem;
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+input {
+  outline: 0;
+  font-size: 1rem;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 2rem;
+}
+
+.tab-section {
+  border: 1px solid var(--dark-blue);
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.tab-section .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab-section .tabs li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border-left: 1px solid var(--white);
+}
+
+.tab-section .tabs li a {
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.tab-section .tabs li a:hover {
+  background-color: var(--dark-blue-hover);
+}
+
+.tab-section .tabs li:first-child {
+  border-left: 0px;
+}
+
+.tab-section .tab-content {
+  border: 1px solid var(--dark-blue);
+  padding: 1rem;
+}
+
+.tab-section .tab-content .tab-pane {
+  display: none;
+}
+
+.tab-section .tab-content .active {
+  display: block;
+}
+
+.tab-section .tab-content .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+.tab-section .tab-content .show {
+  opacity: 1;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper .todo-fields, .wrapper .data-section {
+  padding: 1rem;
+  border: 1px solid #454545;
+  width: 50%;
+}
+
+.wrapper .todo-fields form, .wrapper .data-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .todo-fields form input, .wrapper .data-section form input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.wrapper .todo-fields form .add, .wrapper .data-section form .add {
+  padding: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.wrapper .data-section .addTodoList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--light-blue);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.wrapper .data-section .addTodoList li:first-child {
+  margin-top: 0;
+}
+
+.wrapper .data-section .addTodoList li span {
+  min-width: 60px;
+  display: inline-block;
+  text-align: center;
+  font-size: .8rem;
+  cursor: pointer;
+  padding: .5rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+/*# sourceMappingURL=style.css.map */
